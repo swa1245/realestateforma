@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residences — FORMA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true"></div>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__brand">FOR<span>MA</span></div>
+      <div class="loader__track"><div class="loader__fill"></div></div>
+      <div class="loader__row"><span>Residences</span><span class="loader__pct">000</span></div>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="logo">FOR<span>MA</span></a>
+      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="residences.html">Residences</a>
+        <a href="about.html">Studio</a>
+        <a href="about-us.html">About</a>
+        <a href="contact.html" class="nav__cta">Private tour</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Collection</p>
+        <h1 class="serif-display">Selected works.</h1>
+        <p class="lead">Towers, villas and penthouses shaped by light and landscape — quietly distinctive across Mumbai, Pune and the coast.</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <article class="feature-res reveal">
+          <div class="feature-res__media">
+            <img src="assets/re-hero.jpg" alt="Skyline One Worli" />
+          </div>
+          <div>
+            <p class="eyebrow">Featured · Project S</p>
+            <h3>Skyline One, Worli</h3>
+            <div class="feature-res__meta">
+              <span>178–240 m²</span>
+              <span>3 &amp; 4 BHK</span>
+              <span>Harbour light</span>
+            </div>
+            <p>A boutique tower of thirty-six homes facing the bay. Full-height glazing, travertine lobby, and a private sky lounge reserved for residents only — designed as a community, not a corridor complex.</p>
+            <ul class="amenity-list">
+              <li>Concierge &amp; climate automation</li>
+              <li>Underfloor heating in suites</li>
+              <li>EV charging · visitor suites</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost" style="border-color: var(--line-light); color: var(--ink-on-light);" data-cursor="Tour">Request viewing</a>
+          </div>
+        </article>
+
+        <article class="feature-res reveal">
+          <div class="feature-res__media">
+            <img src="assets/re-community.jpg" alt="Coastal community" />
+          </div>
+          <div>
+            <p class="eyebrow">Featured · Project C</p>
+            <h3>Courtyard Villas, Alibaug</h3>
+            <div class="feature-res__meta">
+              <span>12 homes</span>
+              <span>Private pools</span>
+              <span>Gated landscape</span>
+            </div>
+            <p>Instead of corridors, walking paths connect the homes. Concrete, teak and planted courts that cool before air-conditioning — a place to return year after year.</p>
+            <ul class="amenity-list">
+              <li>Private basement options</li>
+              <li>Shared wellness pavilion</li>
+              <li>Optional PV &amp; EV points</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost" style="border-color: var(--line-light); color: var(--ink-on-light);" data-cursor="Tour">Request viewing</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">All residences</p>
+          <h2 class="display">Browse by type</h2>
+        </div>
+        <div class="filter-row reveal" id="res-filters">
+          <button class="filter-chip is-active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="tower">Towers</button>
+          <button class="filter-chip" data-filter="villa">Villas</button>
+          <button class="filter-chip" data-filter="penthouse">Penthouses</button>
+          <button class="filter-chip" data-filter="pune">Pune</button>
+        </div>
+        <div class="res-grid" id="res-grid">
+          <article class="res-card reveal" id="skyline-one" data-cat="tower" data-cursor="Tour">
+            <div class="res-card__media"><img src="assets/re-hero.jpg" alt="Skyline One" /></div>
+            <div class="res-card__body">
+              <span>Worli · Mumbai · Tower</span>
+              <h3>Skyline One</h3>
+              <p>178–240 m² harbour-facing homes with full-height glass and a private sky lounge.</p>
+              <a class="res-card__link" href="contact.html">Request a tour</a>
+            </div>
+          </article>
+          <article class="res-card reveal" id="courtyard-villa" data-cat="villa" data-cursor="Tour">
+            <div class="res-card__media"><img src="assets/re-villa.jpg" alt="Courtyard Villa" /></div>
+            <div class="res-card__body">
+              <span>Alibaug · Villa</span>
+              <h3>Courtyard Villa</h3>
+              <p>Twelve gated homes with planted courts, teak interiors and private pools.</p>
+              <a class="res-card__link" href="contact.html">Request a tour</a>
+            </div>
+          </article>
+          <article class="res-card reveal" id="glass-house" data-cat="tower pune" data-cursor="Tour">
+            <div class="res-card__media"><img src="assets/re-soft-living.jpg" alt="Glass House" /></div>
+            <div class="res-card__body">
+              <span>Kalyani Nagar · Pune</span>
+              <h3>Glass House</h3>
+              <p>124–186 m² duplex volumes with floating stairs and canopy-level light.</p>
+              <a class="res-card__link" href="contact.html">Request a tour</a>
+            </div>
+          </article>
+          <article class="res-card reveal" id="apex-penthouse" data-cat="penthouse" data-cursor="Tour">
+            <div class="res-card__media"><img src="assets/re-terrace.jpg" alt="Apex Penthouse" /></div>
+            <div class="res-card__body">
+              <span>Lower Parel · Penthouse</span>
+              <h3>Apex Penthouse</h3>
+              <p>240–380 m² duplex with panoramic views and a private rooftop solarium.</p>
+              <a class="res-card__link" href="contact.html">Request a tour</a>
+            </div>
+          </article>
+          <article class="res-card reveal" id="atelier-tower" data-cat="tower" data-cursor="Tour">
+            <div class="res-card__media"><img src="assets/re-lobby.jpg" alt="Atelier Tower" /></div>
+            <div class="res-card__body">
+              <span>BKC edge · Tower</span>
+              <h3>Atelier Tower</h3>
+              <p>Thirty-six residences, sculpted lobby, concierge and quiet after-work plans.</p>
+              <a class="res-card__link" href="contact.html">Request a tour</a>
+            </div>
+          </article>
+          <article class="res-card reveal" id="north-suite" data-cat="pune" data-cursor="Tour">
+            <div class="res-card__media"><img src="assets/re-slow-morning.jpg" alt="North Suite" /></div>
+            <div class="res-card__body">
+              <span>Baner · Pune</span>
+              <h3>North Suite</h3>
+              <p>Garden-light bedroom wings with walk-ins and studies facing trees, not traffic.</p>
+              <a class="res-card__link" href="contact.html">Request a tour</a>
+            </div>
+          </article>
+          <article class="res-card reveal" data-cat="villa" data-cursor="Tour">
+            <div class="res-card__media"><img src="assets/re-community.jpg" alt="Coastal lane" /></div>
+            <div class="res-card__body">
+              <span>Alibaug · Community</span>
+              <h3>Lane Residences</h3>
+              <p>Path-linked homes with shared wellness pavilion — closer to villas than flats.</p>
+            </div>
+          </article>
+          <article class="res-card reveal" data-cat="penthouse tower" data-cursor="Tour">
+            <div class="res-card__media"><img src="assets/re-bedroom.jpg" alt="Harbour suite" /></div>
+            <div class="res-card__body">
+              <span>Worli · Suite</span>
+              <h3>Harbour Suite</h3>
+              <p>Corner 4 BHK with dual aspect light and a dressing room facing the bay.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Typologies</p>
+          <h2 class="serif-display">What you can live in</h2>
+        </div>
+        <div class="specs__grid">
+          <article class="spec-card reveal">
+            <strong>97 — 140 m²</strong>
+            <h3>Garden residences</h3>
+            <p>Direct terrace access into communal gardens — indoor comfort with outdoor living.</p>
+          </article>
+          <article class="spec-card reveal">
+            <strong>178 — 220 m²</strong>
+            <h3>Sky apartments</h3>
+            <p>Elevated living with harbour or canopy views; select plots with private basements.</p>
+          </article>
+          <article class="spec-card reveal">
+            <strong>240 — 380 m²</strong>
+            <h3>Penthouse duplex</h3>
+            <p>Two floors, panoramic glass, and a private rooftop solarium.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Cities</p>
+          <h2 class="display">Where we build</h2>
+        </div>
+        <div class="city-strip">
+          <article class="city-card reveal">
+            <h3>Mumbai</h3>
+            <p>Worli, Lower Parel, BKC edge — towers tuned for harbour light and quiet after work.</p>
+          </article>
+          <article class="city-card reveal">
+            <h3>Pune</h3>
+            <p>Kalyani Nagar &amp; Baner — canopy views, garden wings, duplex living volumes.</p>
+          </article>
+          <article class="city-card reveal">
+            <h3>Alibaug</h3>
+            <p>Gated courtyards and path-linked villas — a place to return year after year.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__bg"><img src="assets/re-night-mood.jpg" alt="" /></div>
+      <div class="container cta__content">
+        <p class="eyebrow">Private viewing</p>
+        <h2 class="serif-display" style="color: var(--bone);">Request keys to a home</h2>
+        <p>Share your city and typology. We’ll send a shortlist within two working days.</p>
+        <a href="contact.html" class="btn btn--gold" data-cursor="Book">Book a tour</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a href="index.html" class="logo">FOR<span>MA</span></a>
+          <p>Residences shaped by light, material and a quieter way of living.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="residences.html">Residences</a>
+          <a href="about.html">Studio</a>
+          <a href="about-us.html">About</a>
+        </div>
+        <div>
+          <h4>Cities</h4>
+          <a href="residences.html">Mumbai</a>
+          <a href="residences.html">Pune</a>
+          <a href="residences.html">Alibaug</a>
+        </div>
+        <div>
+          <h4>Desk</h4>
+          <a href="tel:+912269001100">+91 22 6900 1100</a>
+          <a href="mailto:hello@forma.living">hello@forma.living</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 FORMA Living</span>
+        <span>RERA details on request</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll("#res-filters .filter-chip").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("#res-filters .filter-chip").forEach((b) => b.classList.remove("is-active"));
+        btn.classList.add("is-active");
+        const f = btn.dataset.filter;
+        document.querySelectorAll("#res-grid .res-card").forEach((card) => {
+          const show = f === "all" || (card.dataset.cat || "").includes(f);
+          card.style.display = show ? "" : "none";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

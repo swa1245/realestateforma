@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio — FORMA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true"></div>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__brand">FOR<span>MA</span></div>
+      <div class="loader__track"><div class="loader__fill"></div></div>
+      <div class="loader__row"><span>Studio</span><span class="loader__pct">000</span></div>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="logo">FOR<span>MA</span></a>
+      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="residences.html">Residences</a>
+        <a href="about.html">Studio</a>
+        <a href="about-us.html">About</a>
+        <a href="contact.html" class="nav__cta">Private tour</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--image">
+      <div class="page-hero__media">
+        <img src="assets/re-studio-office.jpg" alt="FORMA studio workspace" />
+      </div>
+      <div class="container">
+        <p class="eyebrow">Studio</p>
+        <h1 class="serif-display">Drawings, light<br />&amp; built quiet.</h1>
+        <p class="lead">Plans, elevations, sketches and finished rooms — how FORMA composes homes before they meet the skyline.</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container about-grid">
+        <div class="reveal-left">
+          <p class="eyebrow">Practice</p>
+          <h2 class="serif-display" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem;">Architecture for a bespoke life</h2>
+          <p style="color: var(--mute-on-light); margin-bottom: 1rem;">We do not subscribe to a single style. Like a curator, FORMA matches visionary architects and landscape designers to the identity of each site — Worli glass, Baner gardens, Alibaug courts.</p>
+          <p style="color: var(--mute-on-light);">Every residence begins on paper: site notes, hand sketches, then measured drawings. Renders come last — when the light path is already proven.</p>
+          <div class="quote-block">
+            <p>“Every space begins with how morning light enters — not with a marketing render.”</p>
+            <cite>FORMA Studio · Mumbai</cite>
+          </div>
+        </div>
+        <div class="reveal-right about-gallery">
+          <div class="about-gallery__main">
+            <img src="assets/re-draw-sketch.jpg" alt="Courtyard villa section sketch" />
+          </div>
+          <div class="about-gallery__side">
+            <div><img src="assets/re-lobby.jpg" alt="Material study lobby" /></div>
+            <div><img src="assets/re-soft-living.jpg" alt="Living study" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Drawing room</p>
+          <h2 class="display">Architecture on paper</h2>
+          <p class="section__sub">Plans, elevations, sections and landscape boards from active and delivered work.</p>
+        </div>
+        <div class="draw-grid">
+          <figure class="draw-card draw-card--wide reveal" data-cursor="Plan">
+            <img src="assets/re-draw-plan.jpg" alt="Apartment floor plan drawing" />
+            <figcaption>
+              <span>Sheet 01 · Floor plan</span>
+              <strong>Skyline One · typical 4 BHK</strong>
+              <p>Living–dining axis to harbour, service court tucked west, master wing with morning light.</p>
+            </figcaption>
+          </figure>
+          <figure class="draw-card reveal" data-cursor="Elevation">
+            <img src="assets/re-draw-elevation.jpg" alt="Tower elevation drawing" />
+            <figcaption>
+              <span>Sheet 02 · Elevation</span>
+              <strong>Tower face · Worli</strong>
+              <p>Balcony rhythm, stone plinth and recessed crown — quiet vertical order.</p>
+            </figcaption>
+          </figure>
+          <figure class="draw-card reveal" data-cursor="Sketch">
+            <img src="assets/re-draw-sketch.jpg" alt="Villa section sketch" />
+            <figcaption>
+              <span>Sheet 03 · Section sketch</span>
+              <strong>Courtyard villa · Alibaug</strong>
+              <p>Double-height living opens to planted court; shaded gallery above.</p>
+            </figcaption>
+          </figure>
+          <figure class="draw-card draw-card--wide reveal" data-cursor="Site">
+            <img src="assets/re-draw-site.jpg" alt="Landscape site plan" />
+            <figcaption>
+              <span>Sheet 04 · Site &amp; landscape</span>
+              <strong>Coastal community board</strong>
+              <p>Path-linked villas, shared wellness pavilion, north orientation and tree canopy.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">From line to room</p>
+          <h2 class="serif-display">How a drawing becomes a home</h2>
+        </div>
+        <div class="studio-flow reveal">
+          <article class="studio-flow__step">
+            <span>01</span>
+            <h3>Site &amp; climate</h3>
+            <p>Sun path, monsoon, neighbours and view corridors mapped before massing.</p>
+          </article>
+          <article class="studio-flow__step">
+            <span>02</span>
+            <h3>Sketch &amp; massing</h3>
+            <p>Charcoal and model studies — courts, cores and outdoor rooms first.</p>
+          </article>
+          <article class="studio-flow__step">
+            <span>03</span>
+            <h3>Measured drawings</h3>
+            <p>Plans, sections, elevations and landscape boards for approvals and craft.</p>
+          </article>
+          <article class="studio-flow__step">
+            <span>04</span>
+            <h3>Material boards</h3>
+            <p>Stone, timber, metal and textiles sampled under Indian daylight.</p>
+          </article>
+          <article class="studio-flow__step">
+            <span>05</span>
+            <h3>Build &amp; detail</h3>
+            <p>Joinery, thresholds and shutter systems checked on site, not only in CAD.</p>
+          </article>
+          <article class="studio-flow__step">
+            <span>06</span>
+            <h3>Handover film</h3>
+            <p>Private walkthroughs with honest carpet areas and aftercare contacts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Studio gallery</p>
+          <h2 class="display">Spaces after the linework</h2>
+        </div>
+        <div class="studio-gallery">
+          <a class="studio-gallery__item studio-gallery__item--tall reveal" href="residences.html#skyline-one" data-cursor="View">
+            <img src="assets/re-hero.jpg" alt="Skyline residence" />
+            <span>Skyline · exterior</span>
+          </a>
+          <a class="studio-gallery__item reveal" href="residences.html#glass-house" data-cursor="View">
+            <img src="assets/re-interior.jpg" alt="Living interior" />
+            <span>Living · light study</span>
+          </a>
+          <a class="studio-gallery__item reveal" href="residences.html#atelier-tower" data-cursor="View">
+            <img src="assets/re-lobby.jpg" alt="Lobby craft" />
+            <span>Lobby · material</span>
+          </a>
+          <a class="studio-gallery__item reveal" href="residences.html#apex-penthouse" data-cursor="View">
+            <img src="assets/re-terrace.jpg" alt="Terrace" />
+            <span>Terrace · outdoor room</span>
+          </a>
+          <a class="studio-gallery__item studio-gallery__item--wide reveal" href="residences.html#courtyard-villa" data-cursor="View">
+            <img src="assets/re-villa.jpg" alt="Villa courtyard" />
+            <span>Villa · courtyard</span>
+          </a>
+          <a class="studio-gallery__item reveal" href="residences.html#north-suite" data-cursor="View">
+            <img src="assets/re-bedroom.jpg" alt="Suite" />
+            <span>Suite · quiet wing</span>
+          </a>
+          <a class="studio-gallery__item reveal" href="residences.html" data-cursor="View">
+            <img src="assets/re-community.jpg" alt="Community path" />
+            <span>Community · path</span>
+          </a>
+          <a class="studio-gallery__item reveal" href="residences.html" data-cursor="View">
+            <img src="assets/re-soft-living.jpg" alt="Soft living" />
+            <span>Interior · soft light</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Disciplines</p>
+          <h2 class="serif-display">What the studio holds</h2>
+        </div>
+        <div class="values">
+          <article class="value reveal">
+            <h3>Architecture</h3>
+            <p>Massing, structure interfaces and façade order matched to each city micro-climate.</p>
+          </article>
+          <article class="value reveal">
+            <h3>Interiors</h3>
+            <p>Joinery, lighting scenes and quiet thresholds — rooms that hold evening light.</p>
+          </article>
+          <article class="value reveal">
+            <h3>Landscape</h3>
+            <p>Courts, paths and terraces designed as rooms — planting that cools before machines do.</p>
+          </article>
+        </div>
+        <div class="values" style="margin-top: 1rem;">
+          <article class="value reveal">
+            <h3>Light first</h3>
+            <p>Apertures and orientations decided before the brochure exists.</p>
+          </article>
+          <article class="value reveal">
+            <h3>Craft</h3>
+            <p>Stone, metal and timber from workshops we revisit — not one-off imports.</p>
+          </article>
+          <article class="value reveal">
+            <h3>Wellbeing</h3>
+            <p>Spa, gym and quiet lounges scaled to boutique communities, not mega-clubhouses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Method</p>
+          <h2 class="display">How a home is composed</h2>
+        </div>
+        <div class="process-grid reveal">
+          <article class="process-card">
+            <div class="process-card__num">1.0</div>
+            <h3>The site</h3>
+            <p>We read orientation, monsoon, neighbours and view corridors before a single wall is drawn.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-card__num">2.0</div>
+            <h3>The partners</h3>
+            <p>Architects, interior and landscape teams are hand-picked for the character of the destination.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-card__num">3.0</div>
+            <h3>The detail</h3>
+            <p>Material boards, joinery, and climate systems are specified for Indian weather — not European catalogues.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-card__num">4.0</div>
+            <h3>The handover</h3>
+            <p>Private tours, honest carpet areas, and aftercare that still answers the phone in year three.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container about-grid">
+        <div class="reveal-left">
+          <img src="assets/re-lobby.jpg" alt="Material study lobby" style="aspect-ratio: 4/3; width: 100%; object-fit: cover;" />
+        </div>
+        <div class="reveal-right">
+          <p class="eyebrow">Materials</p>
+          <h2 class="serif-display" style="font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 1rem;">Chosen to age well</h2>
+          <p style="color: var(--mute-on-light); margin-bottom: 1rem;">Travertine, oak, brass and linen — finishes that deepen with use. Climate automation, smart locks and underfloor systems where they serve comfort, not spectacle.</p>
+          <ul class="amenity-list">
+            <li>Schneider / equivalent quiet switchgear</li>
+            <li>Electrically adjustable shutters</li>
+            <li>Optional PV &amp; EV ready basements</li>
+            <li>Local stone &amp; teak joinery partners</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div><strong data-count="18">0</strong><span>Designers &amp; PMs</span></div>
+          <div><strong data-count="12">0</strong><span>Partner ateliers</span></div>
+          <div><strong data-count="48">0</strong><span>Homes composed</span></div>
+          <div><strong data-count="6">0</strong><span>Active sites</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__bg"><img src="assets/re-draw-elevation.jpg" alt="" /></div>
+      <div class="container cta__content">
+        <p class="eyebrow">Collaborate</p>
+        <h2 class="serif-display" style="color: var(--bone);">Land, tower, or villa?</h2>
+        <p>Developers and family offices — write to the studio with a site note. We reply personally.</p>
+        <a href="contact.html" class="btn btn--gold" data-cursor="Write">Start a conversation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a href="index.html" class="logo">FOR<span>MA</span></a>
+          <p>Residences shaped by light, material and a quieter way of living.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="residences.html">Residences</a>
+          <a href="about.html">Studio</a>
+          <a href="about-us.html">About</a>
+        </div>
+        <div>
+          <h4>Cities</h4>
+          <a href="residences.html">Mumbai</a>
+          <a href="residences.html">Pune</a>
+          <a href="residences.html">Alibaug</a>
+        </div>
+        <div>
+          <h4>Desk</h4>
+          <a href="tel:+912269001100">+91 22 6900 1100</a>
+          <a href="mailto:hello@forma.living">hello@forma.living</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 FORMA Living</span>
+        <span>RERA details on request</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    gsap.to(".page-hero--image .page-hero__media img", {
+      scale: 1,
+      duration: 1.6,
+      ease: "power2.out",
+    });
+  </script>
+</body>
+</html>
